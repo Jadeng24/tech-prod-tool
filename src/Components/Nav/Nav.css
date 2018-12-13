@@ -1,0 +1,26 @@
+.NavHolder {
+    width: 100vw;
+    min-height:100px;
+    background:#222;
+    display:flex;
+    justify-content: flex-start;
+    align-items:center;
+    
+}
+img.bcLogo {
+    width: 100px;
+    padding: 0px 20px;
+   }
+.Nav {
+    display:flex;
+    justify-content: flex-start;
+    align-items:center; 
+}
+
+.Nav a {
+    text-decoration: none;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px 10px;
+    border-right: solid 2px rgba(255, 255, 255, 0.281);
+}
