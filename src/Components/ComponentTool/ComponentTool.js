@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import './Landing.css';
+import './ComponentTool.css';
 import Nav from '../Nav/Nav.js';
 import MenuIcon from '@material-ui/icons/Menu';
-class Landing extends Component {
+class ComponentTool extends Component {
     constructor() {
         super() 
 
@@ -23,4 +23,4 @@ class Landing extends Component {
         )
     }
 }
-export default Landing;
+export default ComponentTool;
