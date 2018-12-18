@@ -100,7 +100,6 @@ class Nav extends React.Component {
 
     render() {
         const { classes, theme } = this.props;
-        const aStyles = 'text-decoration:none; &:focus, &:hover, &:visited, &:link, &:active { text-decoration: none;}'
         return (
             <div className={classes.root}>
                 <CssBaseline />

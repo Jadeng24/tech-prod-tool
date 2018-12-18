@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import 'typeface-roboto';
 import Landing from './Components/Landing/Landing.js';
 import ComponentTool from './Components/ComponentTool/ComponentTool.js';
-import 'typeface-roboto';
+import BrandHeroComp from './Components/ComponentTool/BrandHeroComp/BrandHeroComp.js';
+import StoryImageComp from './Components/ComponentTool/StoryImageComp/StoryImageComp.js';
+
 
 class App extends Component {
   render() {
@@ -18,6 +21,8 @@ class App extends Component {
               {/*===| Routes |=================================*/}
               <Route component={Landing} exact path='/' />
               <Route component={ComponentTool} path='/component-tool' />
+              <Route component={BrandHeroComp} path='/component/brand-hero' />
+              <Route component={StoryImageComp} path='/component/story-image' />
               {/* <Route component={Settings} path='/settings' /> */}
 
             </Switch>
