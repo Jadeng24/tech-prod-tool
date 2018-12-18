@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './Landing.css';
 import Nav from '../Nav/Nav.js';
-import MenuIcon from '@material-ui/icons/Menu';
+// import MenuIcon from '@material-ui/icons/Menu';
 class Landing extends Component {
     constructor() {
         super() 
@@ -17,7 +17,7 @@ class Landing extends Component {
                 <Nav />
                 <div className="mainContent">
                     {/* <MenuIcon/> */}
-                    <h1>i asd fas dfasdfas dfasd f<br/>am jaden and heres the tool</h1>hello there i am jaden
+                    <h1>Dashboard</h1>
                 </div>
             </div>
         )

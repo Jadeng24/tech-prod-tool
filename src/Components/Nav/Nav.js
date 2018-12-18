@@ -16,12 +16,10 @@ import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
-import InboxIcon from '@material-ui/icons/MoveToInbox';
-import MailIcon from '@material-ui/icons/Mail';
 // import bcIcon from '../Assets/bcLogo.png';
 import Add from '@material-ui/icons/Add';
 import ViewCompact from '@material-ui/icons/ViewCompact';
-import Settings from '@material-ui/icons/Settings';
+import { Link } from 'react-router-dom';
 const drawerWidth = 240;
 
 const styles = theme => ({
@@ -102,7 +100,7 @@ class Nav extends React.Component {
 
     render() {
         const { classes, theme } = this.props;
-
+        const aStyles = 'text-decoration:none; &:focus, &:hover, &:visited, &:link, &:active { text-decoration: none;}'
         return (
             <div className={classes.root}>
                 <CssBaseline />
@@ -125,7 +123,7 @@ class Nav extends React.Component {
                             <MenuIcon />
                         </IconButton>
                         <Typography variant="h6" color="inherit" noWrap>
-                            Mini variant drawer
+                            Tech Prod Tool
             </Typography>
                     </Toolbar>
                 </AppBar>
@@ -150,22 +148,29 @@ class Nav extends React.Component {
                     </div>
                     <Divider />
                     <List>
-                        <ListItem button>
-                            <ListItemIcon><Add /></ListItemIcon>
-                            <ListItemText primary='New Project' />
-                        </ListItem>
-                        <ListItem button>
-                            <ListItemIcon><ViewCompact /></ListItemIcon>
-                            <ListItemText primary='Components builder' />
-                        </ListItem>
-                        <ListItem button>
-                            <ListItemIcon><Settings /></ListItemIcon>
-                            <ListItemText primary='Settings' />
-                        </ListItem>
+                        <Link to={'/'} style={{ textDecoration: 'none'}}>
+                            <ListItem button>
+                                <ListItemIcon><Add /></ListItemIcon>
+                                <ListItemText primary='Dashboard' className="navLink" />
+                            </ListItem>
+                        </Link>
+
+                        <Link to={'/component-tool'} style={{ textDecoration: 'none'}}>
+                            <ListItem button>
+                                <ListItemIcon><ViewCompact /></ListItemIcon>
+                                <ListItemText primary='Component tool' />
+                            </ListItem></Link>
+
+                        {/* <Link to={'/settings'} style={{ textDecoration: 'none'}}>
+                            <ListItem button>
+                                <ListItemIcon><Settings /></ListItemIcon>
+                                <ListItemText primary='Settings' />
+                            </ListItem>
+                        </Link> */}
                     </List>
                     <Divider />
                 </Drawer>
-            </div>
+            </div >
         );
     }
 }
