@@ -1,0 +1,20 @@
+.alignmentHolder {
+    display:flex;
+    padding: 10px 0px 20px 0px;
+}
+.selected {
+    background:  rgb(53, 192, 81);
+    
+}
+.notSelected {
+    background: linear-gradient(180deg, #bbb 0%, #777 );
+}
+.alignItem {
+    padding: 6px 14px;
+    border-radius: 4px;
+    margin-right: 10px;
+    cursor:pointer;
+}
+.alignItem:hover {
+    background:rgb(40, 148, 62);
+}

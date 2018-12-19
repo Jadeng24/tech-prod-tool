@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import Nav from '../../Nav/Nav.js';
-import brandHero from '../ComponentAssets/brand-hero.png';
+import GoBackIcon from '@material-ui/icons/KeyboardArrowLeft';
+import './StoryImageComp.css';
 import AceEditor from 'react-ace';
 import 'brace/mode/json';
 import 'brace/theme/github';
@@ -10,8 +12,8 @@ class StoryImageComp extends Component {
         super()
 
         this.state = {
-            imageUrl: '',
-            alignment: '',
+            imageUrl: '/promo_upload.backcountry.com/bc/2018/',
+            alignment: 'left',
             title: '',
             text: '',
         }
@@ -44,26 +46,34 @@ class StoryImageComp extends Component {
                 "title": "${this.state.title}",
                 "text": "${this.state.text}"
             }
-            },`
+}`
         return (
             <div>
                 <Nav />
                 <div className="mainContent">
-                    <h1>StoryImageComp</h1>
+                <div className="titleHolder">
+                        <Link to="/component-tool" className="goBackLink"><GoBackIcon className="icon" /></Link>
+                        <h1>Story Image</h1>
+                        <div className="resetBtn" onClick={()=> this.clearFields()}>Reset</div>
+                    </div>
                     <h3>Select which components will be used:</h3>
                     {/* <img src={brandHero} alt="compImg" className='compImg' onClick={()=>this.onSelect()}/> */}
                     <p>Image Url</p>
                     <input type='text' value={this.state.imageUrl} className="compInput" onChange={(e) => this.handleChange('imageUrl', e.target.value)} />
 
-                   <p>Alignment</p>
-                    <input type='text' value={this.state.alignment} className="compInput" onChange={(e) => this.handleChange('alignment', e.target.value)} />
+                    <p>Alignment</p>
+                    <div className="alignmentHolder">
+                        <div className={this.state.alignment === 'left' ? 'selected alignItem' : 'notSelected alignItem'} onClick={() => this.setState({ alignment: 'left' })}>Left</div>
+                        <div className={this.state.alignment === 'center' ? 'selected alignItem' : 'notSelected alignItem'} onClick={() => this.setState({ alignment: 'center' })}>Center</div>
+                        <div className={this.state.alignment === 'right' ? 'selected alignItem' : 'notSelected alignItem'} onClick={() => this.setState({ alignment: 'right' })}>Right</div>
+                    </div>
                     <p>Title</p>
                     <input type='text' value={this.state.title} className="compInput" onChange={(e) => this.handleChange('title', e.target.value)} />
                     <p>Text</p>
                     <input type='text' value={this.state.text} className="compInput" onChange={(e) => this.handleChange('text', e.target.value)} />
 
 
-                      <br/><HighlightOff onClick={()=>this.clearFields()}/>
+                    <br /><HighlightOff onClick={() => this.clearFields()} />
                     <div className="editor"><AceEditor
                         mode="json"
                         theme="github"
