@@ -18,18 +18,44 @@ class ShopTheLookComp extends Component {
             headline: '',
             ticketNumber: '',
             componentJSON:
-                `{
-    "type": "hero",
-    "options": {
-    "image": {
-        "base": "",
-        "small": "",
-        "large": ""
-    },
-    "logo": "",
-    "headline": ""
-    }
-}`
+                `[
+                    {"type": "client-group",
+                        "options": {
+                            "components": [
+                
+                    {
+                  "type": "stl",
+                  "options": {
+                    "title": "Ready for the Slopes",
+                    "direction": "left",
+                    "intro": "Skis and snowboards are precious cargo. Scroll down and get your gear to the slopes safely with our latest winter travel essentials.",
+                    "quote": "",
+                    "modal": {
+                        "image": "//content.backcountry.com/promo_upload/bcs/2018/BC18_0368/STL/Ski_STL.jpg",
+                        "cta": "Ready for the Slopes"
+                    },
+                    "look": {
+                        "image": "//content.backcountry.com/promo_upload/bcs/2018/BC18_0368/STL/Ski_STL.jpg",
+                        "cta": "Shop this Look",
+                        "roomId": "1078607"
+                    },
+                    "promo": {
+                        "image": "//content.backcountry.com/promo_upload/bcs/2018/BC18_0368/STL/Ski_Large.jpg",
+                        "url": ""
+                    },
+                    "social": {
+                        "image": "//content.backcountry.com/promo_upload/bcs/2018/BC18_0368/STL/Ski_Detail.jpg",
+                        "title": "",
+                        "text": "",
+                        "iconImage": "",
+                        "iconUrl": ""
+                    }
+                  }
+                }
+                                ] 
+                            }
+                    }
+                ]`
         }
     }
     clearFields() {
@@ -40,18 +66,44 @@ class ShopTheLookComp extends Component {
             headline: '',
             ticketNumber: '',
             componentJSON:
-                `{
-    "type": "hero",
-    "options": {
-    "image": {
-        "base": "",
-        "small": "",
-        "large": ""
-    },
-    "logo": "",
-    "headline": ""
-    }
-}`
+                 `[
+                    {"type": "client-group",
+                        "options": {
+                            "components": [
+                
+                    {
+                  "type": "stl",
+                  "options": {
+                    "title": "Ready for the Slopes",
+                    "direction": "left",
+                    "intro": "Skis and snowboards are precious cargo. Scroll down and get your gear to the slopes safely with our latest winter travel essentials.",
+                    "quote": "",
+                    "modal": {
+                        "image": "//content.backcountry.com/promo_upload/bcs/2018/BC18_0368/STL/Ski_STL.jpg",
+                        "cta": "Ready for the Slopes"
+                    },
+                    "look": {
+                        "image": "//content.backcountry.com/promo_upload/bcs/2018/BC18_0368/STL/Ski_STL.jpg",
+                        "cta": "Shop this Look",
+                        "roomId": "1078607"
+                    },
+                    "promo": {
+                        "image": "//content.backcountry.com/promo_upload/bcs/2018/BC18_0368/STL/Ski_Large.jpg",
+                        "url": ""
+                    },
+                    "social": {
+                        "image": "//content.backcountry.com/promo_upload/bcs/2018/BC18_0368/STL/Ski_Detail.jpg",
+                        "title": "",
+                        "text": "",
+                        "iconImage": "",
+                        "iconUrl": ""
+                    }
+                  }
+                }
+                                ] 
+                            }
+                    }
+                ]`
         });
     }
 
@@ -62,9 +114,6 @@ class ShopTheLookComp extends Component {
         }, () => {
             console.log('this.state', this.state)
             this.setState({
-                imageUrlMobile: `/promo_upload/bcs/2018/${this.state.ticketNumber}/hero-mobile.jpg`,
-                imageUrl: `/promo_upload/bcs/2018/${this.state.ticketNumber}/hero.jpg`,
-                logo: `/promo_upload/bcs/2018/${this.state.ticketNumber}/logo.jpg`,
                 componentJSON:
                     `{
     "type": "hero",
