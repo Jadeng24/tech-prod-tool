@@ -115,10 +115,10 @@ class BrandHeroComp extends Component {
                     <div className="titleHolder">
                         <Link to="/component-tool" className="goBackLink"><GoBackIcon className="icon" /></Link>
                         <h1>Brand Hero</h1>
-                        <div className="resetBtn" onClick={()=> this.clearFields()}>Reset</div>
+                        <div className="resetBtn" onClick={() => this.clearFields()}>Reset</div>
                     </div>
                     <img src={brandHeroImg} alt="compImg" className="compExampleImg" />
-                    
+
                     <div className="fullSection">
                         <div className="section leftSection">
                             <label>Wrike Ticket Number</label>

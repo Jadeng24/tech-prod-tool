@@ -4,7 +4,6 @@
 }
 .selected {
     background:  rgb(53, 192, 81);
-    
 }
 .notSelected {
     background: linear-gradient(180deg, #bbb 0%, #777 );

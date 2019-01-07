@@ -7,6 +7,7 @@ import AceEditor from 'react-ace';
 import 'brace/mode/json';
 import 'brace/theme/github';
 import HighlightOff from '@material-ui/icons/HighlightOff';
+import StoryImg from '../ComponentAssets/story-image.png';
 class StoryImageComp extends Component {
     constructor() {
         super()
@@ -51,13 +52,15 @@ class StoryImageComp extends Component {
             <div>
                 <Nav />
                 <div className="mainContent">
-                <div className="titleHolder">
+                    <div className="titleHolder">
                         <Link to="/component-tool" className="goBackLink"><GoBackIcon className="icon" /></Link>
                         <h1>Story Image</h1>
-                        <div className="resetBtn" onClick={()=> this.clearFields()}>Reset</div>
+                        <div className="resetBtn" onClick={() => this.clearFields()}>Reset</div>
                     </div>
+
+                    <img src={StoryImg} alt="compImg" className="compExampleImg" />
+
                     <h3>Select which components will be used:</h3>
-                    {/* <img src={brandHero} alt="compImg" className='compImg' onClick={()=>this.onSelect()}/> */}
                     <p>Image Url</p>
                     <input type='text' value={this.state.imageUrl} className="compInput" onChange={(e) => this.handleChange('imageUrl', e.target.value)} />
 
