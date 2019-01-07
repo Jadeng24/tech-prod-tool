@@ -6,6 +6,7 @@ import Landing from './Components/Landing/Landing.js';
 import ComponentTool from './Components/ComponentTool/ComponentTool.js';
 import BrandHeroComp from './Components/ComponentTool/BrandHeroComp/BrandHeroComp.js';
 import StoryImageComp from './Components/ComponentTool/StoryImageComp/StoryImageComp.js';
+import ShopTheLookComp from './Components/ComponentTool/ShopTheLookComp/ShopTheLookComp.js';
 
 
 class App extends Component {
@@ -23,6 +24,7 @@ class App extends Component {
               <Route component={ComponentTool} path='/component-tool' />
               <Route component={BrandHeroComp} path='/component/brand-hero' />
               <Route component={StoryImageComp} path='/component/story-image' />
+              <Route component={ShopTheLookComp} path='/component/shop-the-look' />
               {/* <Route component={Settings} path='/settings' /> */}
 
             </Switch>

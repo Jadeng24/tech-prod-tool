@@ -4,6 +4,7 @@ import Nav from '../Nav/Nav.js';
 import { Link } from 'react-router-dom';
 import brandHeroImg from './ComponentAssets/brand-hero.png';
 import StoryImg from './ComponentAssets/story-image.png';
+import ShopTheLookImg from './ComponentAssets/shop-the-look.png';
 class ComponentTool extends Component {
     constructor() {
         super();
@@ -35,9 +36,9 @@ class ComponentTool extends Component {
                             <img src={StoryImg} alt="compImg" className="linkImg" />
                         </Link>
 
-                        <Link to="/component/social">
-                            <span className="compLink">Social</span>
-                            <img src={brandHeroImg} alt="compImg" className="linkImg" />
+                        <Link to="/component/shop-the-look">
+                            <span className="compLink">Shop The Look</span>
+                            <img src={ShopTheLookImg} alt="compImg" className="linkImg" />
                         </Link>
                     </div>
                 </div>

@@ -7,7 +7,7 @@ import AceEditor from 'react-ace';
 import 'brace/mode/json';
 import 'brace/theme/github';
 import HighlightOff from '@material-ui/icons/HighlightOff';
-import StoryImg from '../ComponentAssets/story-image.png';
+import ComponentImg from '../ComponentAssets/story-image.png';
 class StoryImageComp extends Component {
     constructor() {
         super()
@@ -58,7 +58,7 @@ class StoryImageComp extends Component {
                         <div className="resetBtn" onClick={() => this.clearFields()}>Reset</div>
                     </div>
 
-                    <img src={StoryImg} alt="compImg" className="compExampleImg" />
+                    <img src={ComponentImg} alt="compImg" className="compExampleImg" />
 
                     <h3>Select which components will be used:</h3>
                     <p>Image Url</p>

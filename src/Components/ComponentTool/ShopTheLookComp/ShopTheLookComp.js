@@ -2,14 +2,12 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Nav from '../../Nav/Nav.js';
 import GoBackIcon from '@material-ui/icons/KeyboardArrowLeft';
-import ComponentImg from '../ComponentAssets/brand-hero.png';
+import './ShopTheLookComp.css';
 import AceEditor from 'react-ace';
 import 'brace/mode/json';
 import 'brace/theme/github';
-
-// import HighlightOff from '@material-ui/icons/HighlightOff';
-
-class BrandHeroComp extends Component {
+import ComponentImg from '../ComponentAssets/shop-the-look.png';
+class ShopTheLookComp extends Component {
     constructor() {
         super()
 
@@ -155,8 +153,4 @@ class BrandHeroComp extends Component {
         )
     }
 }
-export default BrandHeroComp;
-
-
-
-
+export default ShopTheLookComp;
