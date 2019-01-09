@@ -1,0 +1,14 @@
+.footerContent {
+    width: 100%;
+    pointer-events: none;
+    color:white;
+    padding: 10px 2%;
+    display:flex;
+    justify-content: flex-end;
+    align-items:center;
+    position: absolute;
+    bottom: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    opacity: .3;
+
+}

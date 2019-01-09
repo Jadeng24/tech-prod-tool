@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './ComponentTool.css';
 import Nav from '../Nav/Nav.js';
+import Footer from '../Footer/Footer.js';
 import { Link } from 'react-router-dom';
 import brandHeroImg from './ComponentAssets/brand-hero.png';
 import StoryImg from './ComponentAssets/story-image.png';
@@ -24,7 +25,7 @@ class ComponentTool extends Component {
                 <Nav />
                 <div className="mainContent">
                     <h1>Component Tool</h1>
-                    <h3>Select which components will be used:</h3>
+                    <h2>Choose a backcountry component to build:</h2>
                     <div className="componentSelector">
                         <Link to="/component/brand-hero">
                             <span className="compLink">Brand Hero</span>
@@ -42,6 +43,7 @@ class ComponentTool extends Component {
                         </Link>
                     </div>
                 </div>
+                <Footer/>
             </div>
         )
     }

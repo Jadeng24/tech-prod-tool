@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './Landing.css';
 import Nav from '../Nav/Nav.js';
+import Footer from '../Footer/Footer.js';
 // import MenuIcon from '@material-ui/icons/Menu';
 class Landing extends Component {
     constructor() {
@@ -19,6 +20,7 @@ class Landing extends Component {
                     {/* <MenuIcon/> */}
                     <h1>Dashboard</h1>
                 </div>
+                <Footer/>
             </div>
         )
     }

@@ -23,19 +23,25 @@ time, mark, audio, video {
 .mainContent {
   display:flex;
   flex-direction: column;
-  padding:84px 20px 20px 94px;
+  padding:74px 10px 20px 84px;
   width: 100%;
   min-height:100vh;
   background:linear-gradient(130deg,#333, #555);
   color: white;
   font-family: Arial, Helvetica, sans-serif;
+  position: relative;
 }
 .mainContent h1 {
-  font-size:28px;
+  font-size:22px;
   font-weight: 600;
 }
-.mainContent h3 {
-  font-size:16px;
+.mainContent h2 {
+  font-size:18px;
   font-weight: 400;
   margin:10px 0px;
+}
+.mainContent h3 {
+  font-size:14px;
+  font-weight: 400;
+  margin:6px 0px;
 }

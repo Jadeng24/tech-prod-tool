@@ -1,0 +1,32 @@
+.STLPreview {
+    min-width: 200px;
+    height: 700px;
+    background: white;
+    display:flex;
+    justify-content: space-between;
+    align-items:space-between;
+    flex-wrap:wrap;
+    border-radius: 4px;
+    padding:15px;
+}
+.STLColumn {
+    width: 49%;
+    border:solid 1px rgba(169, 169, 169, 0.413);
+    height: 100%;
+    color:black;
+    overflow-wrap: normal;
+    white-space: pre-wrap;
+    word-wrap: break-word; 
+}
+.STLColumn > h1 {
+    font-size: 16pt;
+    font-weight: 600;
+    padding-bottom: 10px;
+    font-family: serif;
+}
+.STLColumn > p {
+    font-size: 8pt;
+    font-weight: 400;
+    padding-bottom: 5px;
+    padding-right: 20px;
+}

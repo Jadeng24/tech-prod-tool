@@ -60,7 +60,6 @@ class StoryImageComp extends Component {
 
                     <img src={ComponentImg} alt="compImg" className="compExampleImg" />
 
-                    <h3>Select which components will be used:</h3>
                     <p>Image Url</p>
                     <input type='text' value={this.state.imageUrl} className="compInput" onChange={(e) => this.handleChange('imageUrl', e.target.value)} />
 
