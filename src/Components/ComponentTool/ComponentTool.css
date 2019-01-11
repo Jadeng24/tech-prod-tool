@@ -170,3 +170,40 @@ label {
 .alignItem:hover {
     background:rgb(40, 148, 62);
 }
+.cta {
+    padding: 6px 15px;
+    border-radius: 30px;
+    color:#222;
+    font-weight:600;
+    font-size: 8pt;
+    border:solid 1px #222;
+    margin: 10px 0px;
+    cursor:pointer;
+}
+.cta:hover {
+    color:white;
+    background: #222;
+}
+
+.hidden {
+    display:none;
+}
+
+.left {
+    text-align: left;
+    align-self: flex-start;
+    align-items: flex-start;
+}
+.right {
+    text-align: right;
+    align-self: flex-end;
+    align-items: flex-end;
+}
+.horizontal {
+    display: flex;
+    flex-direction: row;
+}
+.vertical {
+    display: flex;
+    flex-direction: column;
+}

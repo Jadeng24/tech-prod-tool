@@ -18,17 +18,17 @@ class ShopTheLookComp extends Component {
             ctaText: '',
             ctaUrl: '',
             quote: '',
-            modalImage: '',
+            modalImage: '/promo_upload/bcs/2019/BC19_0001/STLModal.jpg',
             modalCta: '',
-            lookImage: '',
+            lookImage: '/promo_upload/bcs/2019/BC19_0001/STLLook.jpg',
             lookCta: 'Shop this Look',
             lookRoomId: '',
-            promoImage: '',
+            promoImage: '/promo_upload/bcs/2019/BC19_0001/STLPromo.jpg',
             promoUrl: '',
-            socialImage: '',
+            socialImage: '/promo_upload/bcs/2019/BC19_0001/STLSocial.jpg',
             socialTitle: '',
             socialText: '',
-            socialIconImage: '',
+            socialIconImage: '/promo_upload/bcs/2019/BC19_0001/icon.png',
             socialIconUrl: '',
             componentJSON:
                 `[
@@ -83,17 +83,17 @@ class ShopTheLookComp extends Component {
             ctaText: '',
             ctaUrl: '',
             quote: '',
-            modalImage: '',
+            modalImage: '/promo_upload/bcs/2019/BC19_0001/STLModal.jpg',
             modalCta: '',
-            lookImage: '',
+            lookImage: '/promo_upload/bcs/2019/BC19_0001/STLLook.jpg',
             lookCta: 'Shop this Look',
             lookRoomId: '',
-            promoImage: '',
+            promoImage: '/promo_upload/bcs/2019/BC19_0001/STLPromo.jpg',
             promoUrl: '',
-            socialImage: '',
+            socialImage: '/promo_upload/bcs/2019/BC19_0001/STLSocial.jpg',
             socialTitle: '',
             socialText: '',
-            socialIconImage: '',
+            socialIconImage: '/promo_upload/bcs/2019/BC19_0001/icon.png',
             socialIconUrl: '',
             componentJSON:
                 `[
@@ -113,23 +113,23 @@ class ShopTheLookComp extends Component {
                             "url": ""
                         },
                         "modal": {
-                            "image": "",
+                            "image": "/promo_upload/bcs/2019/BC19_0001/stlModal.jpg",
                             "cta": ""
                         },
                         "look": {
-                            "image": "",
+                            "image": "/promo_upload/bcs/2019/BC19_0001/stlLook.jpg",
                             "cta": "",
                             "roomId": ""
                         },
                         "promo": {
-                            "image": "",
+                            "image": "/promo_upload/bcs/2019/BC19_0001/stlPromo.jpg",
                             "url": ""
                         },
                         "social": {
-                            "image": "",
+                            "image": "/promo_upload/bcs/2019/BC19_0001/stlSocial.jpg",
                             "title": "",
                             "text": "",
-                            "iconImage": "",
+                            "iconImage": "/promo_upload/bcs/2019/BC19_0001/icon.png",
                             "iconUrl": ""
                         }
                     }
@@ -141,11 +141,7 @@ class ShopTheLookComp extends Component {
         });
     }
 
-    handleChange(prop, val) {
-        this.setState({
-            [prop]: val
-        }, () => console.log(`state: ${this.state}`))
-    }
+
 
     handleChange(prop, val) {
         this.setState({
@@ -255,14 +251,28 @@ class ShopTheLookComp extends Component {
 
                         <div className="section oneThird">
                             <div className="STLPreview">
-                                <div className="STLColumn">
+                                <div className={this.state.direction === 'left' ? 'left STLColumn' : 'right STLColumn'}>
                                     <h1>{this.state.title}</h1>
                                     <p>{this.state.intro}</p>
+                                    <button className={this.state.ctaText ? 'cta' : 'hidden'}>{this.state.ctaText}</button><br />
+                                    <img src={'https://content.backcountry.com' + this.state.lookImage}className="STLlookImg" />
+                                    <button className={this.state.direction === 'left' ? 'left cta-full' : 'right cta-full'}>{this.state.lookCta}</button>
+                                    <h1 className="STLquote">{this.state.quote}</h1>
                                 </div>
                                 <div className="STLColumn">
-                                
+                                    <img src={'https://content.backcountry.com' + this.state.promoImage}className="STLpromoImg" />
+                                    <span className="horizontal social">
+                                        <img src={'https://content.backcountry.com' + this.state.socialImage}  className="STLpromoImg" />
+                                        <span className="vertical socialText">
+                                            <img src={'https://content.backcountry.com' + this.state.socialIconImage}  className={this.state.socialIconImage ? 'STLIconImg' : 'hidden'} />
+                                            <h3>{this.state.socialTitle}</h3>
+                                            <p>{this.state.socialText}</p>
+                                        </span>
+                                    </span>
+
+
                                 </div>
-                               
+
                             </div>
                         </div>
                         <div className="section oneThird">
