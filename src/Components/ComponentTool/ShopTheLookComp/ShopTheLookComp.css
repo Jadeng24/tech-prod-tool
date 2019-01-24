@@ -20,14 +20,14 @@
     word-wrap: break-word; 
 }
 .STLColumn > h1 {
-    font-size: 16pt;
+    font-size: 14pt;
     font-weight: 600;
     padding-bottom: 10px;
     font-family: serif;
     max-width: 100%;
 }
 .STLColumn > p {
-    font-size: 8pt;
+    font-size: 6pt;
     font-weight: 400;
     padding-bottom: 5px;
     max-width: 100%;
@@ -60,19 +60,20 @@
 .STLColumn > .STLquote {
     text-align: center;
     max-width: 100%;
+    font-size: 12pt;
 }
 .STLColumn > .social > .socialText {
     padding-left: 10px;
 }
 .STLColumn > .social > img {
-    width: 50%;
+    width: 55%;
 }
 .STLColumn > .social h3 {
     font-weight: 600;
     font-size: 8pt;
 }
 .STLColumn > .social p {
-    font-size: 7pt;
+    font-size: 6pt;
 }
 .STLColumn > .social .STLIconImg {
     max-width: 20px;

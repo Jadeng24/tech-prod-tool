@@ -18,17 +18,17 @@ class ShopTheLookComp extends Component {
             ctaText: '',
             ctaUrl: '',
             quote: '',
-            modalImage: '/promo_upload/bcs/2019/BC19_0001/STLModal.jpg',
+            modalImage: '//content.backcountry.com/promo_upload/bcs/2019/BC19_0001/STLModal.jpg',
             modalCta: '',
-            lookImage: '/promo_upload/bcs/2019/BC19_0001/STLLook.jpg',
+            lookImage: '//content.backcountry.com/promo_upload/bcs/2019/BC19_0001/STLLook.jpg',
             lookCta: 'Shop this Look',
             lookRoomId: '',
-            promoImage: '/promo_upload/bcs/2019/BC19_0001/STLPromo.jpg',
+            promoImage: '//content.backcountry.com/promo_upload/bcs/2019/BC19_0001/STLPromo.jpg',
             promoUrl: '',
-            socialImage: '/promo_upload/bcs/2019/BC19_0001/STLSocial.jpg',
+            socialImage: '//content.backcountry.com/promo_upload/bcs/2019/BC19_0001/STLSocial.jpg',
             socialTitle: '',
             socialText: '',
-            socialIconImage: '/promo_upload/bcs/2019/BC19_0001/icon.png',
+            socialIconImage: '//content.backcountry.com/promo_upload/bcs/2019/BC19_0001/icon.png',
             socialIconUrl: '',
             componentJSON:
                 `[
@@ -83,17 +83,17 @@ class ShopTheLookComp extends Component {
             ctaText: '',
             ctaUrl: '',
             quote: '',
-            modalImage: '/promo_upload/bcs/2019/BC19_0001/STLModal.jpg',
+            modalImage: '//content.backcountry.com/promo_upload/bcs/2019/BC19_0001/STLModal.jpg',
             modalCta: '',
-            lookImage: '/promo_upload/bcs/2019/BC19_0001/STLLook.jpg',
+            lookImage: '//content.backcountry.com/promo_upload/bcs/2019/BC19_0001/STLLook.jpg',
             lookCta: 'Shop this Look',
             lookRoomId: '',
-            promoImage: '/promo_upload/bcs/2019/BC19_0001/STLPromo.jpg',
+            promoImage: '//content.backcountry.com/promo_upload/bcs/2019/BC19_0001/STLPromo.jpg',
             promoUrl: '',
-            socialImage: '/promo_upload/bcs/2019/BC19_0001/STLSocial.jpg',
+            socialImage: '//content.backcountry.com/promo_upload/bcs/2019/BC19_0001/STLSocial.jpg',
             socialTitle: '',
             socialText: '',
-            socialIconImage: '/promo_upload/bcs/2019/BC19_0001/icon.png',
+            socialIconImage: '//content.backcountry.com/promo_upload/bcs/2019/BC19_0001/icon.png',
             socialIconUrl: '',
             componentJSON:
                 `[
@@ -113,23 +113,23 @@ class ShopTheLookComp extends Component {
                             "url": ""
                         },
                         "modal": {
-                            "image": "/promo_upload/bcs/2019/BC19_0001/stlModal.jpg",
+                            "image": "//content.backcountry.com/promo_upload/bcs/2019/BC19_0001/stlModal.jpg",
                             "cta": ""
                         },
                         "look": {
-                            "image": "/promo_upload/bcs/2019/BC19_0001/stlLook.jpg",
+                            "image": "//content.backcountry.com/promo_upload/bcs/2019/BC19_0001/stlLook.jpg",
                             "cta": "",
                             "roomId": ""
                         },
                         "promo": {
-                            "image": "/promo_upload/bcs/2019/BC19_0001/stlPromo.jpg",
+                            "image": "//content.backcountry.com/promo_upload/bcs/2019/BC19_0001/stlPromo.jpg",
                             "url": ""
                         },
                         "social": {
-                            "image": "/promo_upload/bcs/2019/BC19_0001/stlSocial.jpg",
+                            "image": "//content.backcountry.com/promo_upload/bcs/2019/BC19_0001/stlSocial.jpg",
                             "title": "",
                             "text": "",
-                            "iconImage": "/promo_upload/bcs/2019/BC19_0001/icon.png",
+                            "iconImage": "//content.backcountry.com/promo_upload/bcs/2019/BC19_0001/icon.png",
                             "iconUrl": ""
                         }
                     }
@@ -255,16 +255,16 @@ class ShopTheLookComp extends Component {
                                     <h1>{this.state.title}</h1>
                                     <p>{this.state.intro}</p>
                                     <button className={this.state.ctaText ? 'cta' : 'hidden'}>{this.state.ctaText}</button><br />
-                                    <img src={'https://content.backcountry.com' + this.state.lookImage}className="STLlookImg" />
+                                    <img src={'https:' + this.state.lookImage}className="STLlookImg" />
                                     <button className={this.state.direction === 'left' ? 'left cta-full' : 'right cta-full'}>{this.state.lookCta}</button>
                                     <h1 className="STLquote">{this.state.quote}</h1>
                                 </div>
                                 <div className="STLColumn">
-                                    <img src={'https://content.backcountry.com' + this.state.promoImage}className="STLpromoImg" />
+                                    <img src={'https:' + this.state.promoImage}className="STLpromoImg" />
                                     <span className="horizontal social">
-                                        <img src={'https://content.backcountry.com' + this.state.socialImage}  className="STLpromoImg" />
+                                        <img src={'https:' + this.state.socialImage}  className="STLpromoImg" />
                                         <span className="vertical socialText">
-                                            <img src={'https://content.backcountry.com' + this.state.socialIconImage}  className={this.state.socialIconImage ? 'STLIconImg' : 'hidden'} />
+                                            <img src={'https:' + this.state.socialIconImage}  className={this.state.socialIconImage ? 'STLIconImg' : 'hidden'} />
                                             <h3>{this.state.socialTitle}</h3>
                                             <p>{this.state.socialText}</p>
                                         </span>
