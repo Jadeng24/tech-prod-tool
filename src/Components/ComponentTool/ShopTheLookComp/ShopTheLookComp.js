@@ -142,7 +142,6 @@ class ShopTheLookComp extends Component {
     }
 
 
-
     handleChange(prop, val) {
         this.setState({
             [prop]: val,
